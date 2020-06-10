@@ -1,6 +1,42 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+//#1
+
+function getInput(n) {
+  return process.argv[n + 2];
+}
+//--the 'input' variable below stores the return value into a variable.
+//--You don't need to write two functions because each 'let' statement is running off the one function --
+let FirstName = getInput(0);
+console.log(FirstName)
+let LastName = getInput(1);
+console.log(LastName)
+
+//#2
+
+function getInitials(FirstName, LastName){
+  return FirstName[0] + '.' + LastName[LastName.indexOf(' ')+1] + '.';
+}
+
+//#3
+let Initials = getInitials(FirstName, LastName);
+
+
+//#4
+function nameLength(a, b){
+return a.length + b.length;
+}
+let Length = nameLength(FirstName, LastName);
+
+
+//#5
+let Response = 'Hey, ' + Initials + ' ' + 'Mind if I call you that? ' + 
+'Your full name is ' + Length + ' letters long!';
+
+console.log(Response);
+
+
 
 
 
