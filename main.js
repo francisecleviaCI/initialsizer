@@ -14,16 +14,18 @@ let LastName = getInput(1);
 console.log(LastName)
 
 //#2
-
+//the function grabs the first initial of the first and last name inputs and applies a period after each initial.
 function getInitials(FirstName, LastName){
   return FirstName[0] + '.' + LastName[LastName.indexOf(' ')+1] + '.';
 }
 
 //#3
+// 'Initials' variable stores the initials produced in Step 2
 let Initials = getInitials(FirstName, LastName);
 
 
 //#4
+//the function calculates the length of the input, in this case the Full Name.
 function nameLength(a, b){
 return a.length + b.length;
 }
@@ -31,9 +33,11 @@ let Length = nameLength(FirstName, LastName);
 
 
 //#5
+//The variable creates a message that takes in the info stored in 'Initials' and 'Length'
 let Response = 'Hey, ' + Initials + ' ' + 'Mind if I call you that? ' + 
 'Your full name is ' + Length + ' letters long!';
 
+//Console.log takes the above variable and displays the output in Terminal
 console.log(Response);
 
 
